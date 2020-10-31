@@ -7,6 +7,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page256/ra
 WORKDIR /var/www/html
 RUN unzip rapid.zip
 RUN cp -rvf rapid/* .
-RUN rm -rf rapid rapid.zip
+RUN rm -rf Rapid rapid.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
